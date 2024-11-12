@@ -34,6 +34,6 @@
     </hbox>
     
     <hbox>
-        <button width="390" text="Launch Game" id="launchbutton" />
+        <button width="390" text="Launch Game" id="launchbutton" style="font-bold:true;" />
     </hbox>    
 </vbox>
