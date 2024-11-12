@@ -40,6 +40,8 @@ class MainView extends VBox {
     
     @:bind(launchbutton, MouseEvent.CLICK)
     private function onLaunchButton(e:MouseEvent) {
-        trace("Launch");
+        if(Main.content != mod_select) Main.saveAppData(mod_select);
+        Sys.command("start", ["VirtuaCreature.exe"]);
+        Sys.exit(0);
     }
 }

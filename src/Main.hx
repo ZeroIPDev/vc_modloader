@@ -4,6 +4,7 @@ import haxe.ui.HaxeUIApp;
 import sys.FileSystem;
 import sys.io.File;
 import haxe.xml.Access;
+using StringTools;
 
 typedef Mod = {
     var name:String;
@@ -35,8 +36,14 @@ class Main {
             Sys.exit(1);
         }
         var _string = File.getContent(XML_PATH);
-        _xml = new Access(Xml.parse(_string).firstElement());
-        content = _xml.node.initialWindow.node.content.innerData;
+        _xml = new Access(Xml.parse(_string));
+        content = _xml.node.application.node.initialWindow.node.content.innerData;
+    }
+
+    public static function saveAppData(select:String) {
+        var _string = _xml.x.toString();
+        _string = StringTools.replace(_string, content, select);
+        File.saveContent(XML_PATH, _string);
     }
 
     public static function getModList() {
