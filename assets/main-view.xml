@@ -1,0 +1,39 @@
+<vbox style="padding: 5px;">
+    <style>
+        .button {
+            font-size: 25px;
+        }
+        .optionbox {
+            font-size: 16px;
+        }
+        .label {
+            font-size: 15px;
+        }
+    </style>
+    
+    <box width="100%">
+        <label text="Mod List" />
+    </box>
+
+    <hbox>
+        <scrollview id="modlistview" width="390" height="400">
+            <grid columns="1">
+                <optionbox id="NoMod" text="No Mod" onchange="setDescription(NO_MOD_STRING)" />
+            </grid>
+        </scrollview>
+    </hbox>
+
+    <box width="100%">
+        <label text="Description" />
+    </box>
+
+    <hbox>
+        <scrollview width="390" height="100">
+            <label id="description" text="" />
+        </scrollview>
+    </hbox>
+    
+    <hbox>
+        <button width="390" text="Launch Game" id="launchbutton" />
+    </hbox>    
+</vbox>

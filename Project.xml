@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+    <meta title="ModLoader" package="zeroip.vc.modloader" version="1.0.0" company="ZeroIP" />
+    <app main="Main" file="Main" path="build" />
+    <icon path="assets/icon.png" />
+
+    <window background="#FFFFFF" fps="60" />
+    <window width="400" height="615" resizable="false" if="desktop" />
+    <window width="0" height="0" if="html5" />
+
+    <!-- classpath, haxe libs -->
+    <source path="src" />
+
+    <haxelib name="openfl" />
+    <haxelib name="actuate" />
+
+    <haxelib name="haxeui-core" />
+    <haxelib name="haxeui-openfl" />
+</project>
