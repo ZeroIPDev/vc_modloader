@@ -12,7 +12,7 @@
     </style>
     
     <box width="100%">
-        <label text="Mod List" />
+        <label text="Mod List" style="font-bold:true;" />
     </box>
 
     <hbox>
@@ -24,7 +24,7 @@
     </hbox>
 
     <box width="100%">
-        <label text="Description" />
+        <label text="Description" style="font-bold:true;" />
     </box>
 
     <hbox>
