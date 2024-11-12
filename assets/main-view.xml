@@ -18,7 +18,8 @@
     <hbox>
         <scrollview id="modlistview" width="390" height="400">
             <grid columns="1">
-                <optionbox id="NoMod" text="No Mod" onchange="setModSelect(NO_MOD_CONTENT, NO_MOD_STRING)" />
+                <optionbox id="NoMod" text="No Mod (Default)" onchange="setModSelect(NO_MOD_CONTENT, NO_MOD_STRING)" />
+                <optionbox id="LegacyMod" text="Legacy Mode" onchange="setModSelect(LEGACY_MOD_CONTENT, LEGACY_MOD_STRING)" />
             </grid>
         </scrollview>
     </hbox>

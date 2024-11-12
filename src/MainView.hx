@@ -12,6 +12,8 @@ class MainView extends VBox {
     
     private static inline var NO_MOD_CONTENT:String = "VC.swf";
     private static inline var NO_MOD_STRING:String = "The default game with no modifications.";
+    private static inline var LEGACY_MOD_CONTENT:String = "assets/legacy.swf";
+    private static inline var LEGACY_MOD_STRING:String = "Play VirtuaCreature as it was in 2020 before the relaunch!";
 
     public function new() {
         super();
@@ -19,8 +21,10 @@ class MainView extends VBox {
     }
 
     public function setModList() {
+        //Hardcoded mods
         if(Main.content == NO_MOD_CONTENT) NoMod.selected = true;
-
+        else if(Main.content == LEGACY_MOD_CONTENT) LegacyMod.selected = true;
+        //Parse modlist
         for(i in 0...Main.modlist.length) {
             var entry = new OptionBox();
             entry.registerEvent(UIEvent.CHANGE, function(e) {
