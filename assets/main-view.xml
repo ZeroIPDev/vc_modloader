@@ -29,8 +29,8 @@
     </box>
 
     <hbox>
-        <scrollview width="390" height="100">
-            <label id="description" text="" />
+        <scrollview width="390" height="100" horizontalScrollPolicy="never">
+            <label id="description" width="380" text="" />
         </scrollview>
     </hbox>
     
