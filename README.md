@@ -1,6 +1,4 @@
-# VirtuaCreature, by Zero Imagination Productions
-
-[Client](https://github.com/ZeroIPDev/vc_client) | [Server](https://github.com/ZeroIPDev/vc_server) | **ModLoader**
+# VirtuaCreature ModLoader
 
 ## Prerequisites
 
